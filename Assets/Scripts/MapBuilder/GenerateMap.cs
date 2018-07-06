@@ -26,6 +26,14 @@ public class GenerateMap : MonoBehaviour {
 
     public void CreateMap()
     {
+        if(map.childCount > 0)
+        {
+            foreach (Transform child in map)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
+        }
+
         int x;
         int y;
 

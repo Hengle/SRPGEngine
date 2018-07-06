@@ -36,10 +36,15 @@ public class TileSprites : MonoBehaviour {
         {
 
         }
-
+        /*
 		if(Input.GetMouseButtonDown(0))
         {
-            descriptionText.text = "You've clicked on: " + spriteTile.sprite.name;
-        }
+            
+        }*/
 	}
+
+    void OnMouseDown()
+    {
+        descriptionText.text = "You've clicked on: " + spriteTile.transform.name + ", " + spriteTile.sprite.name;
+    }
 }

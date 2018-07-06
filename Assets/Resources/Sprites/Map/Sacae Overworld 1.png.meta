@@ -100,7 +100,7 @@ TextureImporter:
     21300190: Sacae Overworld 1_95
     21300192: Sacae Overworld 1_96
     21300194: Sacae Overworld 1_97
-    21300196: Plains
+    21300196: Sacae Overworld 1_98
     21300198: Sacae Overworld 1_99
     21300200: Sacae Overworld 1_100
     21300202: Sacae Overworld 1_101
@@ -745,7 +745,7 @@ TextureImporter:
     21301480: Sacae Overworld 1_740
     21301482: Sacae Overworld 1_741
     21301484: Sacae Overworld 1_742
-    21301486: Mountain
+    21301486: Sacae Overworld 1_743
     21301488: Sacae Overworld 1_744
     21301490: Sacae Overworld 1_745
     21301492: Sacae Overworld 1_746
@@ -813,7 +813,7 @@ TextureImporter:
     21301616: Sacae Overworld 1_808
     21301618: Sacae Overworld 1_809
     21301620: Sacae Overworld 1_810
-    21301622: Forest
+    21301622: Sacae Overworld 1_811
     21301624: Sacae Overworld 1_812
     21301626: Sacae Overworld 1_813
     21301628: Sacae Overworld 1_814
@@ -3087,7 +3087,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plains
+      name: Sacae Overworld 1_98
       rect:
         serializedVersion: 2
         x: 32
@@ -15987,7 +15987,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mountain
+      name: Sacae Overworld 1_743
       rect:
         serializedVersion: 2
         x: 112
@@ -17347,7 +17347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest
+      name: Sacae Overworld 1_811
       rect:
         serializedVersion: 2
         x: 176
