@@ -46,5 +46,6 @@ public class TileSprites : MonoBehaviour {
     void OnMouseDown()
     {
         descriptionText.text = "You've clicked on: " + spriteTile.transform.name + ", " + spriteTile.sprite.name;
+        Camera.main.GetComponentInChildren<SpriteRenderer>().sprite = spriteTile.sprite;
     }
 }

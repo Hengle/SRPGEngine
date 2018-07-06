@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D;
+using UnityEngine.UI;
 
 public class SpriteSelector : MonoBehaviour {
 
@@ -13,6 +14,11 @@ public class SpriteSelector : MonoBehaviour {
     private Component[] spriteRenderers;
 
     public bool spriteSelectEnabled = false;
+
+    public GameObject uiPanel;
+    public GameObject mapButton;
+    public GameObject xAxisInput;
+    public GameObject yAxisInput;
 
 	// Use this for initialization
 	void Start () {
@@ -56,6 +62,11 @@ public class SpriteSelector : MonoBehaviour {
         {
             if (!spriteSelectEnabled)
             {
+                uiPanel.SetActive(true);
+                mapButton.SetActive(false);
+                xAxisInput.SetActive(false);
+                yAxisInput.SetActive(false);
+
                 for (int i = 0; i < this.transform.childCount; i++)
                 {
                     this.transform.GetChild(i).gameObject.SetActive(true);
@@ -74,6 +85,11 @@ public class SpriteSelector : MonoBehaviour {
             }
             else if (spriteSelectEnabled)
             {
+                uiPanel.SetActive(false);
+                mapButton.SetActive(true);
+                xAxisInput.SetActive(true);
+                yAxisInput.SetActive(true);
+
                 if (spriteRenderers == null)
                 {
                     spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
