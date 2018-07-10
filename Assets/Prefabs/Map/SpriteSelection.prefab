@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4156718226596984}
   - component: {fileID: 212642228852262258}
-  - component: {fileID: 114409305427540502}
   - component: {fileID: 61552582817770394}
+  - component: {fileID: 114762294979786318}
   m_Layer: 0
   m_Name: SpriteSelection
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1870887509562410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8500118, y: 1.9367938, z: 0}
+  m_LocalPosition: {x: 533.98, y: 282.86246, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114409305427540502
+--- !u!114 &114762294979786318
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,10 +75,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1870887509562410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ec15b7c6b606a347b851db60d8fe022, type: 3}
+  m_Script: {fileID: 11500000, guid: 1341d37b49ca739489165b5cc0186ea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeOfTile: 0
 --- !u!212 &212642228852262258
 SpriteRenderer:
   m_ObjectHideFlags: 1

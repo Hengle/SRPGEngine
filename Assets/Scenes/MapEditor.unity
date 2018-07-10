@@ -1015,6 +1015,7 @@ MonoBehaviour:
   defaultTile: {fileID: 1870887509562410, guid: 5d4d394d01296f5449f620d79ff1fc70,
     type: 2}
   currentAtlas: {fileID: 2800000, guid: dbfc96109eb0d784c9b11605379acd68, type: 3}
+  map: {fileID: 1087968077}
   spriteSelectEnabled: 0
   uiPanel: {fileID: 973012680}
   mapButton: {fileID: 267733761}

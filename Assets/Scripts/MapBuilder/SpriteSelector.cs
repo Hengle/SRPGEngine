@@ -12,6 +12,9 @@ public class SpriteSelector : MonoBehaviour {
 
     private Sprite[] storedSprites;
     private Component[] spriteRenderers;
+    private Component[] mapColliders;
+
+    public GameObject map;
 
     public bool spriteSelectEnabled = false;
 
@@ -66,6 +69,7 @@ public class SpriteSelector : MonoBehaviour {
                 mapButton.SetActive(false);
                 xAxisInput.SetActive(false);
                 yAxisInput.SetActive(false);
+                
 
                 for (int i = 0; i < this.transform.childCount; i++)
                 {
@@ -81,6 +85,14 @@ public class SpriteSelector : MonoBehaviour {
                 {
                     renderers.enabled = true;
                 }
+
+                mapColliders = map.GetComponentsInChildren<BoxCollider2D>();
+
+                foreach (BoxCollider2D colliders in mapColliders)
+                {
+                    colliders.enabled = false;
+                }
+
                 spriteSelectEnabled = true;
             }
             else if (spriteSelectEnabled)
@@ -98,6 +110,13 @@ public class SpriteSelector : MonoBehaviour {
                 foreach (SpriteRenderer renderers in spriteRenderers)
                 {
                     renderers.enabled = false;
+                }
+
+                mapColliders = map.GetComponentsInChildren<BoxCollider2D>();
+
+                foreach (BoxCollider2D colliders in mapColliders)
+                {
+                    colliders.enabled = true;
                 }
 
                 for (int i = 0; i < this.transform.childCount; i++)

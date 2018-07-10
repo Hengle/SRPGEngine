@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TileSprites : MonoBehaviour {
+public class AtlasSprites : MonoBehaviour {
 
     public enum tileType
     {
@@ -20,9 +20,8 @@ public class TileSprites : MonoBehaviour {
 
     private Text descriptionText;
 
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         spriteTile = GetComponent<SpriteRenderer>();
         colliderBox = GetComponent<BoxCollider2D>();
 
@@ -30,21 +29,21 @@ public class TileSprites : MonoBehaviour {
 
         descriptionText = desc.GetComponent<Text>();
     }
-	
-	// Update is called once per frame
-	void Update () {  
-		if(Input.GetMouseButton(0))
+
+    // Update is called once per frame
+    void Update() {
+        if (Input.GetMouseButton(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
             if (hit)
             {
-                if(hit.collider != null && hit.collider == colliderBox)
+                if (hit.collider != null && hit.collider == colliderBox)
                 {
                     descriptionText.text = "You've clicked on: " + spriteTile.transform.name + ", " + spriteTile.sprite.name;
-                    spriteTile.sprite = Camera.main.GetComponentInChildren<SpriteRenderer>().sprite;
+                    Camera.main.GetComponentInChildren<SpriteRenderer>().sprite = spriteTile.sprite;
                 }
             }
         }
-	}
+    }
 }
