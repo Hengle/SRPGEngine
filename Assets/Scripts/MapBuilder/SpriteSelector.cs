@@ -23,8 +23,12 @@ public class SpriteSelector : MonoBehaviour {
     public GameObject xAxisInput;
     public GameObject yAxisInput;
 
+    private GameObject mapControls;
+
 	// Use this for initialization
 	void Start () {
+        mapControls = Camera.main.gameObject;
+
         storedSprites = Resources.LoadAll<Sprite>("Sprites/Map/"+currentAtlas.name);
 
         int x = 32;
@@ -92,6 +96,9 @@ public class SpriteSelector : MonoBehaviour {
                 {
                     colliders.enabled = false;
                 }
+
+                mapControls.GetComponent<MapEditorControls>().paintingActive = true;
+                mapControls.GetComponent<MapEditorControls>().currentTile.GetComponent<SpriteRenderer>().enabled = true;
 
                 spriteSelectEnabled = true;
             }
