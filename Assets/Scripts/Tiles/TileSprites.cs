@@ -14,21 +14,11 @@ public class TileSprites : MonoBehaviour {
 
     public tileType typeOfTile;
 
-    private SpriteRenderer spriteTile;
-
     private BoxCollider2D colliderBox;
-
-    private Text descriptionText;
-
 
 	// Use this for initialization
 	void Start () {
-        spriteTile = GetComponent<SpriteRenderer>();
         colliderBox = GetComponent<BoxCollider2D>();
-
-        GameObject desc = GameObject.Find("Description");
-
-        descriptionText = desc.GetComponent<Text>();
     }
 	
 	// Update is called once per frame

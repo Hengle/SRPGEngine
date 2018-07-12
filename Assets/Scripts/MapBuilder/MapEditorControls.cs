@@ -44,7 +44,7 @@ public class MapEditorControls : MonoBehaviour {
                         descriptionText.text = "You've clicked on: " + spriteTile.transform.name + ", " + spriteTile.sprite.name;
                         spriteTile.sprite = Camera.main.GetComponentInChildren<SpriteRenderer>().sprite;
                     }
-                    else if(hit.collider.gameObject.GetComponent<AtlasSprites>())
+                    else if(hit.collider.gameObject.name.Contains("SpriteSelection"))
                     {
                         SpriteRenderer spriteTile = hit.collider.gameObject.GetComponent<SpriteRenderer>();
                         descriptionText.text = "You've clicked on: " + spriteTile.transform.name + ", " + spriteTile.sprite.name;
