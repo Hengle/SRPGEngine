@@ -47,7 +47,7 @@ public class GenerateMap : MonoBehaviour {
                     for (int j = 0; j < x; j++)
                     {
                         GameObject newTile = Instantiate(tile, new Vector3(j-3, 3-i, 0), Quaternion.identity, map);
-                        newTile.name = "TileRow" + i.ToString();
+                        newTile.name = "TileRow" + i.ToString() + j.ToString();
                     }
                 }
             }

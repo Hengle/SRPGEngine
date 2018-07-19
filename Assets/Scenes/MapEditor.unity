@@ -1367,6 +1367,13 @@ MonoBehaviour:
   tileProperty: {fileID: 163468154}
   scrollInput: 0
   paintingActive: 0
+  spriteSelectEnabled: 0
+  spriteSelector: {fileID: 1334346520}
+  uiPanel: {fileID: 973012680}
+  mapButton: {fileID: 267733761}
+  xAxisInput: {fileID: 460314429}
+  yAxisInput: {fileID: 1984994684}
+  map: {fileID: 1087968077}
 --- !u!1 &1984994684
 GameObject:
   m_ObjectHideFlags: 0
